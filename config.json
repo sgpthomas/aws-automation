@@ -1,0 +1,101 @@
+{
+  "IamFleetRole": "arn:aws:iam::652578713499:role/samthomas_spotfleet_role",
+  "AllocationStrategy": "lowestPrice",
+  "TargetCapacity": 100,
+  "SpotPrice": "0.10",
+  "ValidFrom": "2018-07-12T22:42:31Z",
+  "ValidUntil": "2019-07-12T22:42:31Z",
+  "TerminateInstancesWithExpiration": true,
+  "LaunchSpecifications": [],
+  "Type": "maintain",
+  "LaunchTemplateConfigs": [
+    {
+      "LaunchTemplateSpecification": {
+        "LaunchTemplateId": "lt-09f2b11fc3a535da5",
+        "Version": "9"
+      },
+      "Overrides": [
+        {
+          "InstanceType": "c3.large",
+          "WeightedCapacity": 2,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c3.xlarge",
+          "WeightedCapacity": 4,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c3.2xlarge",
+          "WeightedCapacity": 8,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c3.4xlarge",
+          "WeightedCapacity": 16,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c3.8xlarge",
+          "WeightedCapacity": 32,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c4.large",
+          "WeightedCapacity": 2,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c4.xlarge",
+          "WeightedCapacity": 4,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c4.2xlarge",
+          "WeightedCapacity": 8,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c4.4xlarge",
+          "WeightedCapacity": 16,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c4.8xlarge",
+          "WeightedCapacity": 36,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c5.large",
+          "WeightedCapacity": 2,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c5.xlarge",
+          "WeightedCapacity": 4,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c5.2xlarge",
+          "WeightedCapacity": 8,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c5.4xlarge",
+          "WeightedCapacity": 16,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c5.9xlarge",
+          "WeightedCapacity": 36,
+          "SubnetId": "subnet-5eef383b"
+        },
+        {
+          "InstanceType": "c5.18xlarge",
+          "WeightedCapacity": 72,
+          "SubnetId": "subnet-5eef383b"
+        }
+      ]
+    }
+  ]
+}
